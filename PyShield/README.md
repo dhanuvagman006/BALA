@@ -1,3 +1,73 @@
+# PyShield - Professional Python Firewall
+
+PyShield is a production‑ready Python firewall with advanced threat protection and a real‑time web dashboard. It protects against DDoS, blocks malicious URLs, controls ports, monitors requests via an optional HTTP proxy, and can send alerts.
+## 🛡️ Core Features
+
+- DDoS protection (sliding window rate limiting, optional IP auto‑ban)
+- URL/domain blocking with 100K+ threat feed support and custom blacklists
+- Optional HTTP proxy (monitor and filter browser traffic in real time)
+- Intrusion detection (failed login/brute‑force tracking with bans)
+- Port management (Windows netsh / Linux iptables; dry‑run by default)
+- Web dashboard (FastAPI) with live stats, activity, and settings
+- Alerting integrations (Email, Discord, Slack)
+
+## ✅ Requirements
+- Python 3.8+ (3.11 recommended)
+- Windows, Linux, or macOS
+- For port rule enforcement: admin/root privileges (dry‑run is safe by default)
+## 🚀 Quick Start (Windows PowerShell)
+
+1) Create venv and install dependencies
+```powershell
+2) Create config from example and edit if needed
+```powershell
+Copy-Item config\config.example.yaml config\config.yaml
+3) Run PyShield
+```powershell
+python run.py
+4) Open the dashboard
+- URL: http://127.0.0.1:8000
+- Username: admin
+- Password: admin
+
+5) Optional: monitor your browser traffic (proxy)
+- Set HTTP proxy to 127.0.0.1:8888
+## ⚙️ Configuration (excerpt)
+
+Edit `config/config.yaml` to tune behavior:
+
+```yaml
+ddos:
+  enabled: true
+  request_limit: 200
+url_blocking:
+  enabled: true
+  feeds:
+dashboard:
+  enabled: true
+  host: 127.0.0.1
+notes:
+- Geo‑blocking requires a local MaxMind GeoLite2 Country DB at `data/GeoLite2-Country.mmdb`.
+- When dry‑run is false, run the app with elevated privileges for port rules.
+
+## 📊 Dashboard
+- Overview: live stats, attack types, and timelines
+- Browser Traffic: live request list, allow/blocked counts, block reasons
+- Activity Log: chronological security events
+- Settings: DDoS, URL list, port controls, alert tests
+
+## 📝 Logs
+
+- Files are written to `logs/` (rotating) and console logs are enabled.
+## ⚠️ Operational Notes
+
+- Change default credentials in `config/config.yaml` before production use.
+- Configure HTTPS/termination in front of the dashboard if exposed publicly.
+- Monitor resource usage when enabling heavy inspection features.
+
+---
+
+PyShield — professional‑grade network security for Python environments.
 # PyShield - Professional Python Firewall# PyShield — Advanced Python Firewall
 
 

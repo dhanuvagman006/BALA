@@ -1,0 +1,104 @@
+2025-10-25 23:10:06,270 WARNING [pyshield.ddos] DDoS ban applied to 1.2.3.4 for 60s (count=4)
+2025-10-25 23:10:06,280 WARNING [pyshield.ids] IDS ban applied to 9.9.9.9 for 60s (failed_logins=3)
+2025-10-25 23:10:06,288 INFO [pyshield.ports] [dry-run] netsh advfirewall firewall add rule name=PyShield_Block_1234 dir=in action=block protocol=TCP localport=1234
+2025-10-25 23:10:06,288 INFO [pyshield.ports] Port 1234 blocked
+2025-10-25 23:10:06,288 INFO [pyshield.ports] [dry-run] netsh advfirewall firewall add rule name=PyShield_Block_4321 dir=in action=block protocol=TCP localport=4321
+2025-10-25 23:10:06,290 INFO [pyshield.ports] Port 4321 blocked
+2025-10-25 23:10:06,290 INFO [pyshield.ports] [dry-run] netsh advfirewall firewall delete rule name=PyShield_Block_1234 protocol=TCP localport=1234
+2025-10-25 23:10:06,296 INFO [pyshield.ports] Port 1234 unblocked
+2025-10-25 23:10:06,296 INFO [pyshield.ports] [dry-run] netsh advfirewall firewall delete rule name=PyShield_Block_4321 protocol=TCP localport=4321
+2025-10-25 23:10:06,298 INFO [pyshield.ports] Port 4321 unblocked
+2025-10-25 23:16:43,090 WARNING [pyshield.ddos] DDoS ban applied to 1.2.3.4 for 60s (count=4)
+2025-10-25 23:16:43,096 WARNING [pyshield.ids] IDS ban applied to 9.9.9.9 for 60s (failed_logins=3)
+2025-10-25 23:16:43,184 INFO [pyshield.ports] [dry-run] netsh advfirewall firewall add rule name=PyShield_Block_1234 dir=in action=block protocol=TCP localport=1234
+2025-10-25 23:16:43,185 INFO [pyshield.ports] Port 1234 blocked
+2025-10-25 23:16:43,185 INFO [pyshield.ports] [dry-run] netsh advfirewall firewall add rule name=PyShield_Block_4321 dir=in action=block protocol=TCP localport=4321
+2025-10-25 23:16:43,185 INFO [pyshield.ports] Port 4321 blocked
+2025-10-25 23:16:43,185 INFO [pyshield.ports] [dry-run] netsh advfirewall firewall delete rule name=PyShield_Block_1234 protocol=TCP localport=1234
+2025-10-25 23:16:43,186 INFO [pyshield.ports] Port 1234 unblocked
+2025-10-25 23:16:43,192 INFO [pyshield.ports] [dry-run] netsh advfirewall firewall delete rule name=PyShield_Block_4321 protocol=TCP localport=4321
+2025-10-25 23:16:43,193 INFO [pyshield.ports] Port 4321 unblocked
+2025-10-26 09:10:41,566 INFO [pyshield] Starting PyShield on Windows
+2025-10-26 09:10:41,582 INFO [pyshield.boot] Dashboard running at http://127.0.0.1:8000
+2025-10-26 09:10:41,582 INFO [pyshield.boot] Dashboard running at http://127.0.0.1:8000
+2025-10-26 09:10:42,258 INFO [pyshield.url] Blacklist updated: +101246 entries (total=101248)
+2025-10-26 09:10:42,258 INFO [pyshield.url] Blacklist updated: +101246 entries (total=101248)
+2025-10-26 09:10:50,791 INFO [pyshield.boot] Shutting down...
+2025-10-26 09:10:50,791 INFO [pyshield.boot] Shutting down...
+2025-10-26 09:10:50,794 INFO [pyshield] PyShield stopped
+2025-10-26 09:10:50,794 INFO [pyshield.boot] Shutting down...
+2025-10-26 09:10:50,794 INFO [pyshield.boot] Shutting down...
+2025-10-26 09:10:50,797 INFO [pyshield] PyShield stopped
+2025-10-26 09:10:59,772 INFO [pyshield] Starting PyShield on Windows
+2025-10-26 09:10:59,793 INFO [pyshield] Starting PyShield on Windows
+2025-10-26 09:10:59,786 INFO [pyshield.boot] Dashboard running at http://127.0.0.1:8000
+2025-10-26 09:10:59,786 INFO [pyshield.boot] Dashboard running at http://127.0.0.1:8000
+2025-10-26 09:10:59,802 INFO [pyshield.boot] Dashboard running at http://127.0.0.1:8000
+2025-10-26 09:10:59,802 INFO [pyshield.boot] Dashboard running at http://127.0.0.1:8000
+2025-10-26 09:11:00,734 INFO [pyshield.url] Blacklist updated: +101246 entries (total=101248)
+2025-10-26 09:11:00,734 INFO [pyshield.url] Blacklist updated: +101246 entries (total=101248)
+2025-10-26 09:11:00,760 INFO [pyshield.url] Blacklist updated: +101246 entries (total=101248)
+2025-10-26 09:11:00,760 INFO [pyshield.url] Blacklist updated: +101246 entries (total=101248)
+2025-10-26 09:16:31,502 INFO [pyshield] Starting PyShield on Windows
+2025-10-26 09:16:31,526 INFO [pyshield.boot] Dashboard running at http://127.0.0.1:8000
+2025-10-26 09:16:31,526 INFO [pyshield.boot] Dashboard running at http://127.0.0.1:8000
+2025-10-26 09:16:32,228 INFO [pyshield.url] Blacklist updated: +101246 entries (total=101248)
+2025-10-26 09:16:32,228 INFO [pyshield.url] Blacklist updated: +101246 entries (total=101248)
+2025-10-26 09:18:29,209 INFO [pyshield.ports] [dry-run] netsh advfirewall firewall add rule name=PyShield_Block_23 dir=in action=block protocol=TCP localport=23
+2025-10-26 09:18:29,209 INFO [pyshield.ports] [dry-run] netsh advfirewall firewall add rule name=PyShield_Block_23 dir=in action=block protocol=TCP localport=23
+2025-10-26 09:18:29,216 INFO [pyshield.ports] Port 23 blocked
+2025-10-26 09:18:29,216 INFO [pyshield.ports] Port 23 blocked
+2025-10-26 09:18:29,219 INFO [pyshield.ports] [dry-run] netsh advfirewall firewall add rule name=PyShield_Block_2323 dir=in action=block protocol=TCP localport=2323
+2025-10-26 09:18:29,219 INFO [pyshield.ports] [dry-run] netsh advfirewall firewall add rule name=PyShield_Block_2323 dir=in action=block protocol=TCP localport=2323
+2025-10-26 09:18:29,219 INFO [pyshield.ports] Port 2323 blocked
+2025-10-26 09:18:29,219 INFO [pyshield.ports] Port 2323 blocked
+2025-10-26 09:18:29,224 INFO [pyshield] Port blocked: 23
+2025-10-26 09:18:29,226 INFO [pyshield] Port blocked: 2323
+2025-10-26 09:19:54,578 INFO [pyshield] Starting PyShield on Windows
+2025-10-26 09:19:54,588 INFO [pyshield.boot] Dashboard running at http://127.0.0.1:8000
+2025-10-26 09:19:54,588 INFO [pyshield.boot] Dashboard running at http://127.0.0.1:8000
+2025-10-26 09:19:55,321 INFO [pyshield.url] Blacklist updated: +101246 entries (total=101248)
+2025-10-26 09:19:55,321 INFO [pyshield.url] Blacklist updated: +101246 entries (total=101248)
+2025-10-26 09:20:08,288 INFO [pyshield.boot] Shutting down...
+2025-10-26 09:20:08,288 INFO [pyshield.boot] Shutting down...
+2025-10-26 09:20:08,288 INFO [pyshield] PyShield stopped
+2025-10-26 09:20:08,294 INFO [pyshield.boot] Shutting down...
+2025-10-26 09:20:08,294 INFO [pyshield.boot] Shutting down...
+2025-10-26 09:20:08,296 INFO [pyshield] PyShield stopped
+2025-10-26 09:20:19,864 INFO [pyshield] Starting PyShield on Windows
+2025-10-26 09:20:19,872 INFO [pyshield.boot] Dashboard running at http://127.0.0.1:8000
+2025-10-26 09:20:19,872 INFO [pyshield.boot] Dashboard running at http://127.0.0.1:8000
+2025-10-26 09:20:20,534 INFO [pyshield.url] Blacklist updated: +101246 entries (total=101248)
+2025-10-26 09:20:20,534 INFO [pyshield.url] Blacklist updated: +101246 entries (total=101248)
+2025-10-26 09:20:24,452 INFO [pyshield.boot] Shutting down...
+2025-10-26 09:20:24,452 INFO [pyshield.boot] Shutting down...
+2025-10-26 09:20:24,452 INFO [pyshield] PyShield stopped
+2025-10-26 09:20:24,452 INFO [pyshield.boot] Shutting down...
+2025-10-26 09:20:24,452 INFO [pyshield.boot] Shutting down...
+2025-10-26 09:20:24,452 INFO [pyshield] PyShield stopped
+2025-10-26 09:31:20,818 INFO [pyshield] Starting PyShield on Windows
+2025-10-26 09:31:20,818 INFO [pyshield.boot] Dashboard running at http://127.0.0.1:8000
+2025-10-26 09:31:20,818 INFO [pyshield.boot] Dashboard running at http://127.0.0.1:8000
+2025-10-26 09:31:22,141 INFO [pyshield.url] Blacklist updated: +101246 entries (total=101248)
+2025-10-26 09:31:22,141 INFO [pyshield.url] Blacklist updated: +101246 entries (total=101248)
+2025-10-26 09:33:31,822 INFO [pyshield] Starting PyShield on Windows
+2025-10-26 09:33:31,830 INFO [pyshield.boot] Dashboard running at http://127.0.0.1:8000
+2025-10-26 09:33:31,830 INFO [pyshield.boot] Dashboard running at http://127.0.0.1:8000
+2025-10-26 09:33:32,572 INFO [pyshield.url] Blacklist updated: +101246 entries (total=101248)
+2025-10-26 09:33:32,572 INFO [pyshield.url] Blacklist updated: +101246 entries (total=101248)
+2025-10-26 09:38:59,249 INFO [pyshield.boot] Shutting down...
+2025-10-26 09:38:59,249 INFO [pyshield.boot] Shutting down...
+2025-10-26 09:38:59,252 INFO [pyshield] PyShield stopped
+2025-10-26 09:38:59,252 INFO [pyshield.boot] Shutting down...
+2025-10-26 09:38:59,252 INFO [pyshield.boot] Shutting down...
+2025-10-26 09:38:59,252 INFO [pyshield] PyShield stopped
+2025-10-26 09:39:13,002 INFO [pyshield] Starting PyShield on Windows
+2025-10-26 09:39:13,018 INFO [pyshield.boot] Dashboard running at http://127.0.0.1:8000
+2025-10-26 09:39:13,018 INFO [pyshield.boot] Dashboard running at http://127.0.0.1:8000
+2025-10-26 09:39:13,852 INFO [pyshield.url] Blacklist updated: +101246 entries (total=101248)
+2025-10-26 09:39:13,852 INFO [pyshield.url] Blacklist updated: +101246 entries (total=101248)
+2025-10-26 11:34:47,712 INFO [pyshield] Starting PyShield on Windows
+2025-10-26 11:34:47,712 INFO [pyshield.boot] Dashboard running at http://127.0.0.1:8000
+2025-10-26 11:34:47,712 INFO [pyshield.boot] Dashboard running at http://127.0.0.1:8000
+2025-10-26 11:34:48,640 INFO [pyshield.url] Blacklist updated: +101246 entries (total=101248)
+2025-10-26 11:34:48,640 INFO [pyshield.url] Blacklist updated: +101246 entries (total=101248)

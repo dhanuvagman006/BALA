@@ -1,0 +1,74 @@
+# PyShield configuration
+
+logging:
+  level: INFO
+  json: false
+  log_dir: logs
+  file_name: pyshield.log
+  max_mb: 10
+  backups: 5
+
+redis:
+  enabled: false
+  url: redis://localhost:6379/0
+
+ddos:
+  enabled: true
+  request_limit: 200
+  window_seconds: 60
+  ban_seconds: 900
+  use_redis: false
+
+url_blocking:
+  enabled: true
+  blacklist:
+    - bad.example.com
+    - http://malicious.test/path
+  feeds:
+    - https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+  virustotal_api_key: null
+  auto_update_minutes: 60
+
+port_blocking:
+  enabled: true
+  blocked_ports: [23, 2323]
+  dry_run: true  # set false to actually modify firewall rules
+
+ids:
+  enabled: true
+  failed_login_threshold: 5
+  window_seconds: 300
+  auto_ban_seconds: 1800
+
+geo:
+  enabled: false
+  blacklist_countries: [RU, CN]
+  whitelist_countries: []
+  geoip_db_path: ./data/GeoLite2-Country.mmdb
+
+inspection:
+  enabled: false
+  interface: null
+  bpf_filter: "tcp or udp"
+  portscan_threshold: 20
+  window_seconds: 60
+
+alerts:
+  email_enabled: false
+  smtp_host: ""
+  smtp_port: 587
+  smtp_username: ""
+  smtp_password: ""
+  from_email: ""
+  to_emails: []
+  discord_webhook_url: null
+  slack_webhook_url: null
+
+dashboard:
+  enabled: true
+  host: 127.0.0.1
+  port: 8000
+  username: admin
+  password: admin
+  enable_proxy: true
+  proxy_port: 8888
